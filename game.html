@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/lib/babylon.1.14-beta-debug.js"></script>
+    <script src="js/lib/jquery-2.1.1.min.js"></script>
+
+    <script src="maps/level1.js"></script>
+
+    <script src="js/Game.js"></script>
+    <script src="js/utils/Preloader.js"></script>
+    <script src="js/utils/Utils.js"></script>
+    <script src="js/utils/Timer.js"></script>
+
+    <script src="js/tiles/Tile.js"></script>
+    <script src="js/tiles/Tile.Switch.js"></script>
+    <script src="js/tiles/Tile.Teleporter.js"></script>
+    <script src="js/tiles/Tile.Ender.js"></script>
+    <script src="js/Level.js"></script>
+    <script src="js/Block.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Rajdhani:700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+    <!-- The loading screen ! -->
+    <div id="loadingWrapper">
+        <div id="loadingValue">
+            0%
+        </div>
+        <div id="loadingText">
+            Loading in progress...
+        </div>
+    </div>
+
+    <div id="textBack">
+        <div id="text"></div>
+    </div>
+
+    <div id="nbTurnBack">
+        <div id="nbTurn">0</div>
+    </div>
+	<canvas id="renderCanvas"></canvas>
+	
+</body>
+</html>

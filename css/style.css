@@ -1,0 +1,78 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow:hidden;
+    font-family: 'Rajdhani', sans-serif;
+}
+#renderCanvas {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/** LOADING SCREEN **/
+#loadingWrapper {
+    position:absolute;
+    width:100%;
+    height:100%;
+    background: radial-gradient(circle, #5f5991 0%, #3f3b60 85%) no-repeat;
+    text-align:center;
+    color:white;
+    transition: transform 0.75s ease-in-out;
+}
+#loadingWrapper #loadingValue {
+    font-size: 3em;
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform:translateY(-50%);
+    transform:translateX(-50%);
+}
+#loadingWrapper #loadingText {
+    font-size: 2em;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translateY(-50%);
+    transform:translateX(-50%);
+}
+
+/** LEVEL TEXT **/
+#textBack {
+    position:absolute;
+    width:600px;
+    height:100px;
+    top:20px;
+    right:50%;
+    margin-right:-300px;
+    text-align:center;
+}
+
+#text {
+    position:relative;
+    top:20px;
+    font-size:2em;
+    text-transform: uppercase;
+    opacity:0;
+    transition: opacity 1s ease-in-out;
+    color:#066665;
+}
+
+#nbTurnBack {
+    position:absolute;
+    width:300px;
+    height:50px;
+    top:20px;
+    left:20px;
+    text-align:center;
+}
+
+#nbTurn {
+    position:relative;
+    font-size:2em;
+    text-transform: uppercase;
+    color:#066665;
+}
